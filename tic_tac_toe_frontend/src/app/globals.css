@@ -197,20 +197,27 @@ body {
 
 /* Marks */
 .mark {
-  font-weight: 800;
-  font-size: clamp(2.2rem, 7.5vw, 3.2rem);
-  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
 }
 
+.piece-svg {
+  width: clamp(1.9rem, 6.8vw, 2.6rem);
+  height: clamp(1.9rem, 6.8vw, 2.6rem);
+  filter: drop-shadow(0 8px 18px rgba(17, 24, 39, 0.08));
+}
+
+/* Color theming for players using currentColor */
 .mark-x {
   color: var(--color-primary);
-  text-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+  text-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
 }
 
 .mark-o {
   color: var(--color-amber);
-  text-shadow: 0 8px 18px rgba(245, 158, 11, 0.25);
+  text-shadow: 0 8px 18px rgba(245, 158, 11, 0.18);
 }
 
 /* Status / actions */
